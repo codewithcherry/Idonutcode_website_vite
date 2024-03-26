@@ -1,11 +1,24 @@
 import React from 'react'
+import { useContext } from 'react'
 import { useState } from 'react'
+import { myContext } from './UseFirebase'
 
 const Authentication = ({handleClose}) => {
     const [newAccount,setNewAccount]=useState(true)
     const [email,setEmail]=useState('')
     const [password,setPassword]=useState('')
+
     
+
+    const handleLogin=(e)=>{
+      e.preventDefault()
+      
+    }
+    
+    const handleSignup=(e)=>{
+      e.preventDefault()
+      
+    }
 
     const close=()=>{
             handleClose() 
@@ -47,11 +60,15 @@ const Authentication = ({handleClose}) => {
             /> <br />
             <div>
                 {newAccount?<div>
-            <button className='bg-green-300 p-2 m-2 rounded-lg text-white shadow-sm font-bold hover:bg-green-500'>Login</button> <br />
+            <button 
+            className='bg-green-300 p-2 m-2 rounded-lg text-white shadow-sm font-bold hover:bg-green-500'
+            onClick={handleLogin}
+            >Login</button> <br />
             <p>New User? <span className='text-blue-400 cursor-pointer' onClick={handleAccountStatus}>click here</span></p>
             </div>:<div>
                 <button
                 className='bg-green-300 p-2 m-2 rounded-lg text-white shadow-sm font-bold hover:bg-green-500'
+                onClick={handleSignup}
                 >
                     Signup</button> <br />
                 <p>existing user? <span className='text-blue-400 cursor-pointer' onClick={handleAccountStatus}>click here</span></p>
