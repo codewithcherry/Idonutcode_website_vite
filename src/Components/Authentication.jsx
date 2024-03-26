@@ -1,26 +1,36 @@
 import React from 'react'
-import { useContext } from 'react'
+
 import { useState } from 'react'
-import { myContext } from './UseFirebase'
+import useFirebase from '../Firebase/useFirebase'
+import Alert from './Alert'
+
 
 const Authentication = ({handleClose}) => {
     const [newAccount,setNewAccount]=useState(true)
     const [email,setEmail]=useState('')
     const [password,setPassword]=useState('')
-
+    const [showalert,setShowAlert]=useState(false)
     
+
+    const {alertInfo,signupUser,loginUser}=useFirebase()
 
     const handleLogin=(e)=>{
       e.preventDefault()
+      loginUser(email,password)
+      setShowAlert(true)
       
+  
     }
     
     const handleSignup=(e)=>{
       e.preventDefault()
+      signupUser(email,password)  
+      setShowAlert(true)
       
     }
 
     const close=()=>{
+            setShowAlert(false)
             handleClose() 
     }
 
@@ -79,6 +89,7 @@ const Authentication = ({handleClose}) => {
         </form>
         </div>
       </div>
+      {(showalert && <Alert  type={alertInfo.type} message={alertInfo.message} /> )}
     </div>
   )
 }
