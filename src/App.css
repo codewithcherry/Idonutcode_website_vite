@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind variants;
+
+@keyframes changeword {
+    0% { content: "Web Development"; }
+    25% { content: "Programming Languages"; }
+    50% { content: "Data Structures and Algorithms"; }
+    75% { content: "Web Development"; }
+    100% { content: "UI/UX Designing"; }
+  }
+  
+  .animate-changeword::after {
+    content: "webdevelopment";
+    animation: changeword 8s infinite;
+    display: inline-block;
+    animation-timing-function: ease-in-out;
+  }

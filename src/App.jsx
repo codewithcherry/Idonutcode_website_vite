@@ -1,4 +1,5 @@
 import './App.css'
+import LandingBanner from './Components/LandingBanner'
 import Navbar from './Components/Navbar'
 
 
@@ -9,6 +10,7 @@ function App() {
     <>
      <div className='bg-slate-50'>
       <Navbar /> 
+      <LandingBanner />
      </div>
     </>
   )
