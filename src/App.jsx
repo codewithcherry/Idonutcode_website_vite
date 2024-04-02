@@ -1,6 +1,7 @@
 import './App.css'
 import LandingBanner from './Components/LandingBanner'
 import Navbar from './Components/Navbar'
+import Profile from './Components/Profile'
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
     <>
      <div className='bg-slate-50'>
       <Navbar /> 
-      <LandingBanner />
+      <Profile />
      </div>
     </>
   )
