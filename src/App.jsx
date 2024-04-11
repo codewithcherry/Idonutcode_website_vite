@@ -11,7 +11,6 @@ function App() {
     <>
      <div className='bg-slate-50'>
       <Navbar /> 
-      <Profile />
      </div>
     </>
   )
