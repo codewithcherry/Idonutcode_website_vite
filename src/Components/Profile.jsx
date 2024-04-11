@@ -4,6 +4,7 @@ import ProfileContactInfo from './ProfileComponents/ProfileContactInfo'
 import ProfileSkills from './ProfileComponents/ProfileSkills'
 import ProfileLanguages from './ProfileComponents/ProfileLanguages'
 import ProfileProjects from './ProfileComponents/ProfileProjects'
+import ProfileExperience from './ProfileComponents/ProfileExperience'
 
 const Profile = () => {
   return (
@@ -17,6 +18,7 @@ const Profile = () => {
                 <ProfileLanguages />
             </div>
         </div>
+        <ProfileExperience />
         <ProfileProjects />
       </div>
     </div>
