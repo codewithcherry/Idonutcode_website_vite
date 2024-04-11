@@ -1,25 +1,69 @@
 import React from 'react'
+import { useState } from 'react'
+import SettingsPersonalInfo from './SettingsPersonalInfo'
+import SettingsSkillLanguages from './SettingsSkillLanguages'
+import SettingProfileInfo from './SettingProfileInfo'
+import SettingsWorkExperience from './SettingsWorkExperience'
+import SettingsProjects from './SettingsProjects'
 
 const Settings = () => {
+    const intialValue={
+        profile:true,
+        skills:false,
+        PersonalInfo:false,
+        workExperience:false,
+        projects:false
+    }
+    const [activeMenuItem,setActiveMenuItem]=useState(intialValue)
   return (
     <div className='h-screen'>
       <div className='flex h-full'>
         <div className='flex flex-col  bg-pink-400 w-1/5 h-full m-0  shadow-lg '>
             <div className='h-full'>
             <div>
-                <button className='text-white text-lg p-2 hover:bg-white w-full text-left hover:text-slate-600'>Profile Info</button>
+                <button className='text-white text-lg p-2 hover:bg-white w-full text-left hover:text-slate-600 transition ease-in-out duration-150' 
+                onClick={()=>setActiveMenuItem(intialValue)}
+                >Profile Info</button>
             </div>
             <div>
-            <button className='text-white text-lg p-2 hover:bg-white w-full text-left hover:text-slate-600'>Skills and Languages</button>
+            <button className='text-white text-lg p-2 hover:bg-white w-full text-left hover:text-slate-600 transition ease-in-out duration-150'
+            onClick={()=>setActiveMenuItem({
+                profile:false,
+                skills:true,
+                PersonalInfo:false,
+                workExperience:false,
+                projects:false
+            })}>Skills and Languages</button>
             </div>
             <div>
-            <button className='text-white text-lg p-2 hover:bg-white w-full text-left hover:text-slate-600'>Personal Information</button>
+            <button className='text-white text-lg p-2 hover:bg-white w-full text-left hover:text-slate-600 transition ease-in-out duration-150'
+            onClick={()=>setActiveMenuItem({
+                profile:false,
+                skills:false,
+                PersonalInfo:true,
+                workExperience:false,
+                projects:false
+            })}>Personal Information</button>
             </div>
             <div>
-            <button className='text-white text-lg p-2 hover:bg-white w-full text-left hover:text-slate-600'>Work Experience</button>
+            <button className='text-white text-lg p-2 hover:bg-white w-full text-left hover:text-slate-600 transition ease-in-out duration-150'
+            onClick={()=>setActiveMenuItem({
+                profile:false,
+                skills:false,
+                PersonalInfo:false,
+                workExperience:true,
+                projects:false
+            })}>Work Experience</button>
             </div>
             <div>
-            <button className='text-white text-lg p-2 hover:bg-white w-full text-left hover:text-slate-600'>Projects</button>
+            <button className='text-white text-lg p-2 hover:bg-white w-full text-left hover:text-slate-600 transition ease-in-out duration-150'
+            onClick={()=>setActiveMenuItem({
+                profile:false,
+                skills:false,
+                PersonalInfo:false,
+                workExperience:false,
+                projects:true
+            })}>Projects</button>
             </div>
             </div>
             <div className='w-full bg-pink-300'>
@@ -30,8 +74,22 @@ const Settings = () => {
             </div>
             
         </div>
-        <div className='h-full w-4/5 bg-slate-300'>
-            this section for active menu components
+        <div className='h-full w-4/5'>
+            {
+                activeMenuItem.profile && <SettingProfileInfo />
+            }
+            {
+                activeMenuItem.skills && <SettingsSkillLanguages />
+            }
+            {
+                activeMenuItem.PersonalInfo && <SettingsPersonalInfo />
+            }
+            {
+                activeMenuItem.workExperience && <SettingsWorkExperience />
+            }
+            {
+                activeMenuItem.projects && <SettingsProjects />
+            }
         </div>
       </div>
     </div>
