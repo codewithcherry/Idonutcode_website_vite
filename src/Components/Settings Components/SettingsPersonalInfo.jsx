@@ -22,7 +22,7 @@ const SettingsPersonalInfo = () => {
           }
         </div>
         <div className="m-4 p-4">
-          <form>
+          <form >
             <div className="m-2 p-2">
               <h1 className="text-xl text-slate-600 font-semibold">Full Name</h1>
               <p className="text-sm text-red-500">you can edit your full name here</p>
@@ -30,15 +30,15 @@ const SettingsPersonalInfo = () => {
             <div className="flex border-2 m-2 p-4 rounded-sm">
             <div className="relative m-2">
               <label className=" absolute -top-4 bg-white px-1 left-2 text-md  text-slate-600 m-2 " htmlFor="">First Name</label> 
-              <input className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600"  type="text" placeholder="first name" />
+              <input className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600"  type="text" placeholder="first name" disabled={!edit}/>
             </div>
             <div className="relative m-2"> 
               <label className="absolute -top-4 left-2 px-1 text-md bg-white text-slate-600 m-2 " htmlFor="">Middle Name</label>
-              <input  className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="text" placeholder="last name" />
+              <input  className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="text" placeholder="last name" disabled={!edit}/>
             </div>
             <div className="relative m-2"> 
               <label className="absolute -top-4 left-2 px-1 text-md bg-white text-slate-600 m-2 " htmlFor="">Last Name</label>
-              <input  className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="text" placeholder="last name" />
+              <input  className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="text" placeholder="last name" disabled={!edit}/>
             </div>
             </div>
             <div>
@@ -49,15 +49,15 @@ const SettingsPersonalInfo = () => {
               <div className="border-2 rounded-md p-4 m-2 ">
                 <div className="relative m-2">
                 <label className="absolute -top-4 left-2 text-md bg-white px-1 text-slate-600 m-2 " htmlFor="">Phone</label>
-                <input className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="phone" placeholder="+xx xxx-xxx-xxxx" />
+                <input className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="phone" placeholder="+xx xxx-xxx-xxxx"disabled={!edit}/>
                 </div>
                 <div className="relative m-2">
                 <label className="absolute -top-4 left-2 text-md bg-white px-1 text-slate-600 m-2 " htmlFor="">Primary Email</label> 
-                <input  className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="email" placeholder="example@email.com" />
+                <input  className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="email" placeholder="example@email.com" disabled={!edit}/>
                 </div>
                 <div className="relative m-2">
                 <label className="absolute -top-4 left-2 text-md bg-white px-1 text-slate-600 m-2 " htmlFor="">Secondary Email</label> 
-                <input  className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="email" placeholder="secondary@email.com" />
+                <input  className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="email" placeholder="secondary@email.com" disabled={!edit}/>
                 </div>
               </div>
             </div>
@@ -69,12 +69,12 @@ const SettingsPersonalInfo = () => {
             
            <div className="relative m-2">
                       <label className="absolute -top-4 left-2 px-1 bg-white text-md text-slate-600 m-2 " htmlFor="">DOB</label> 
-                      <input className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="date"  />
+                      <input className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="date"  disabled={!edit}/>
             </div>
 
             <div className="relative m-2">
               <label className="absolute -top-4 left-2 bg-white px-1 text-md text-slate-600 m-2 my-3" htmlFor="">Gender</label> 
-              <select name="gender" id="" className="m-2 p-2 ring-1 rounded ring-slate-600 focus:outline-none focus:ring-2 focus:ring-pink-300">
+              <select name="gender" id="" className="m-2 p-2 ring-1 rounded ring-slate-600 focus:outline-none focus:ring-2 focus:ring-pink-300" >
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
                 <option value="Other">Other</option>
@@ -86,7 +86,7 @@ const SettingsPersonalInfo = () => {
             
             <div className="relative m-2">
               <label className="absolute -top-4 left-2 px-1 text-md bg-white text-slate-600 m-2 " htmlFor="">Country</label> 
-              <select className="m-2 p-2 ring-1 rounded ring-slate-600 focus:outline-none focus:ring-2 focus:ring-pink-300" id="country" name="country">
+              <select className="m-2 p-2 ring-1 rounded ring-slate-600 focus:outline-none focus:ring-2 focus:ring-pink-300" id="country" name="country" >
                 <option value="Afghanistan">Afghanistan</option>
                 <option value="Åland Islands">Åland Islands</option>
                 <option value="Albania">Albania</option>
@@ -407,7 +407,7 @@ const SettingsPersonalInfo = () => {
               <div className="grid grid-cols-3 m-2 border-2 rounded-md p-4 ">  
                 <div className="relative m-2">
                     <label className="absolute -top-4 left-2 px-1 bg-white text-md text-slate-600 m-2 my-3" htmlFor="">Occupation</label> 
-                    <select className="m-2 p-2 w-40 border rounded ring-1 ring-slate-600 focus:outline-none focus:ring-2 focus:ring-pink-300">
+                    <select className="m-2 p-2 w-40 border rounded ring-1 ring-slate-600 focus:outline-none focus:ring-2 focus:ring-pink-300" >
                       <option value="Student">Student</option>
                       <option value="Employee">Employee</option>
                       <option value="Graduate">Graduate</option>
@@ -418,19 +418,19 @@ const SettingsPersonalInfo = () => {
                   </div>
                     <div className="relative m-2">
                       <label className=" absolute -top-4 left-2 px-1 bg-white text-md text-slate-600 m-2 " htmlFor="">Degree</label> 
-                      <input className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="text" placeholder="enter graduation degree" />
+                      <input className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="text" placeholder="enter graduation degree" disabled={!edit}/>
                     </div>
                     <div className="relative m-2">
                       <label className="absolute -top-4 left-2 px-1 bg-white text-md text-slate-600 m-2 " htmlFor="">Passout year</label> 
-                      <input className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="date"  />
+                      <input className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="date" disabled={!edit} />
                     </div>
                     <div className="relative m-2">
                       <label className="absolute -top-4 left-2 px-1 bg-white text-md text-slate-600 m-2 " htmlFor="">specification</label> 
-                      <input className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="text" placeholder="enter specialisation" />              
+                      <input className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="text" placeholder="enter specialisation" disabled={!edit} />              
                     </div>
                     <div className="relative m-2">
                       <label className="absolute -top-4 left-2 px-1 bg-white text-md text-slate-600 m-2 " htmlFor="">University</label> 
-                      <input className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="text" placeholder="College/University" />
+                      <input className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="text" placeholder="College/University" disabled={!edit}/>
                     </div>  
               </div>
                     
@@ -446,27 +446,27 @@ const SettingsPersonalInfo = () => {
                   <div className="grid grid-cols-3 m-2 p-2">
                       <div className="relative m-2">
                           <label className="absolute -top-4 left-2 px-1 bg-white text-md text-slate-600 m-2 " htmlFor="">House no.</label> 
-                          <input className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="text" placeholder="Door No/House No" />
+                          <input className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="text" placeholder="Door No/House No" disabled={!edit}/>
                       </div>
                       <div className="relative m-2">
                       <label className="absolute -top-4 left-2 px-1 bg-white text-md text-slate-600 m-2 " htmlFor="">Street Name</label> 
-                      <input className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="text" placeholder="street name" />
+                      <input className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="text" placeholder="street name" disabled={!edit} />
                     </div>
                     <div className="relative m-2">
                       <label className="absolute -top-4 left-2 px-1 bg-white text-md text-slate-600 m-2 " htmlFor="">Area/Locality</label> 
-                      <input className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="text" placeholder="location" />
+                      <input className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="text" placeholder="location" disabled={!edit}/>
                     </div>
                     <div className="relative m-2">
                       <label className="absolute -top-4 left-2 px-1 bg-white text-md text-slate-600 m-2 " htmlFor="">Landmark</label> 
-                      <input className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="text" placeholder="landmark" />
+                      <input className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="text" placeholder="landmark" disabled={!edit}/>
                     </div>
                     <div className="relative m-2">
                       <label className="absolute -top-4 left-2 px-1 bg-white text-md text-slate-600 m-2 " htmlFor="">city</label> 
-                      <input className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="text" placeholder="city" />
+                      <input className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="text" placeholder="city" disabled={!edit}/>
                     </div>
                     <div className="relative m-2">
-                      <label htmlFor="" className="absolute -top-4 left-2 px-1 bg-white text-md text-slate-600 m-2">State</label>
-                      <select className="m-2 p-2 w-40 border rounded ring-1 ring-slate-600 focus:outline-none focus:ring-2 focus:ring-pink-300">
+                      <label htmlFor="" className="absolute -top-4 left-2 px-1 bg-white text-md text-slate-600 m-2 ">State</label>
+                      <select className="m-2 p-2 w-40 border rounded ring-1 ring-slate-600 focus:outline-none focus:ring-2 focus:ring-pink-300" >
                     <option value="AP">Andhra Pradesh</option>
                     <option value="AR">Arunachal Pradesh</option>
                     <option value="AS">Assam</option>
@@ -507,7 +507,7 @@ const SettingsPersonalInfo = () => {
                     </div>
                     <div className="relative m-2">
                       <label className="absolute -top-4 left-2 px-1 bg-white text-md text-slate-600 m-2 " htmlFor="">zipcode/postal</label> 
-                      <input className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="text" placeholder="postal code" />
+                      <input className="m-2 p-2 rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-1 ring-slate-600" type="text" placeholder="postal code" disabled={!edit}/>
                     </div>
                   </div>
                 </form>
