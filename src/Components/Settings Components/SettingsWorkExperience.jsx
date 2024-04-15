@@ -72,7 +72,7 @@ const SettingsWorkExperience = () => {
             </div>
            </div>
            <div className='text-right'>
-            <input type="submit" value={"Add Experience"} className='m-2 p-2 bg-blue-300 rounded-2xl text-white font-semibold hover:bg-blue-500 shadow-md'/>
+            <input type="submit" value={"Add Experience"} className='m-2 p-2 bg-blue-300 rounded-2xl text-white font-semibold hover:bg-blue-500 shadow-md' disabled={!edit}/>
            </div>
           </form>
         </div>
