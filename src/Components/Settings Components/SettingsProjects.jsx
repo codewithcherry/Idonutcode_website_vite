@@ -6,7 +6,7 @@ const SettingsProjects = () => {
 const intialValue={
   projectTitle:"",
   shortDescription:'',
-  technologies:null,
+  technologies:'',
   projectUrl:''
 }
 
@@ -18,11 +18,11 @@ const handleChange=(e)=>{
   setFormInput({...formInput,[name]:value})
 }
 
-const handletechnologies=(e)=>{
-
-  const {name,value}= e.target
-  setFormInput({...formInput,[name]:value.split(",")})
-
+const handleSubmit=(e)=>{
+  e.preventDefault()
+  setProjects((prev)=>prev=[...projects,formInput])
+  setFormInput(intialValue)
+  console.log(projects)
 }
 
   return (
@@ -33,7 +33,7 @@ const handletechnologies=(e)=>{
       </div>
       <div>
         <div className='p-4 m-2 border-2 rounded-md shadow-md'>
-           <form >
+           <form onSubmit={handleSubmit}>
             <div className='relative m-2 p-2'>
               <label htmlFor="projectname" className='absolute top-0 left-5 text-md px-1 bg-white'>Project Name</label>
               <input className='m-2 p-2 ring-1 ring-slate-600 focus:outline-none focus:ring-2 focus:ring-pink-300 rounded ' type="text" id='projectTitle' name='projectTitle' placeholder='Title of the project' value={formInput.projectTitle} onChange={handleChange} />
@@ -44,7 +44,7 @@ const handletechnologies=(e)=>{
             </div>
             <div className='relative m-2 p-2'>
               <label htmlFor="projectname" className='absolute top-0 left-5 text-md px-1 bg-white'>Technologies</label>
-              <input className='m-2 p-2 ring-1 ring-slate-600 focus:outline-none focus:ring-2 focus:ring-pink-300 rounded ' type="text" id='technologies' name='technologies' placeholder='add technolgoies used in this project' value={formInput.technologies} onChange={handletechnologies} />
+              <input className='m-2 p-2 ring-1 ring-slate-600 focus:outline-none focus:ring-2 focus:ring-pink-300 rounded ' type="text" id='technologies' name='technologies' placeholder='add technolgoies used in this project' value={formInput.technologies} onChange={handleChange} />
             </div>
             <div className='relative m-2 p-2'>
               <label htmlFor="projectUrl" className='absolute top-0 left-5 text-md px-1 bg-white'>Project url</label>
@@ -54,7 +54,7 @@ const handletechnologies=(e)=>{
               <label htmlFor="projectname" className='p-2 text-md px-1 bg-white'>Project Cover</label>
               <div className="flex items-center">
               <img src="" alt="" className='m-2 p-2 h-36 w-1/2 shadow-md rounded-md' />
-              <input className='m-2 p-2 rounded ' type="file" id='technologies' name='technologies'  />
+              <input className='m-2 p-2 rounded ' type="file" id='projectCover' name='projectCover'  />
               </div>
             </div>
             <div className='relative'>
