@@ -60,9 +60,7 @@ const Navbar = () => {
     <div>
      {showAuth && <Authentication  handleClose={handleClose}/>}
     </div>
-    <div>
-    <LandingBanner />
-    </div>
+    
     </>
   );
 };
