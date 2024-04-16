@@ -1,9 +1,12 @@
 import React from 'react'
+import LandingBanner from './LandingBanner'
 
 const Home = () => {
   return (
     <div>
-      This is to display home page of the component
+        <div>
+            <LandingBanner />
+        </div>
     </div>
   )
 }
