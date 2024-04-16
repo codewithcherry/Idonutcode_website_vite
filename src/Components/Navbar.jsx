@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import Logo from '../images/Logo.jpg';
 import Authentication from "./Authentication";
-import LandingBanner from "./LandingBanner";
+
 
 
 const Navbar = () => {
