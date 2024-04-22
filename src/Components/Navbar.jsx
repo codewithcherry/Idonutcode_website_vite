@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import Logo from '../images/Logo.jpg';
+import Logo from '../images/Logo.png';
 import Authentication from "./Authentication";
 
 
@@ -21,11 +21,11 @@ const Navbar = () => {
     <div className="flex  items-center bg-white shadow-lg ">
       <div>
         <a href="">
-          <img src={Logo} alt=""  className="h-12 w-12"/>
+          <img src={Logo} alt=""  className=" mx-2 h-10 w-12 rotate-[35deg] "/>
         </a>
       </div>
       <div className="w-full mx-2">
-        <ul className="flex box-border">
+        <ul className="flex box-border font-medium text-slate-600">
           <li className="mx-4 cursor-pointer  hover:border-b-2 border-blue-400 active:border-b-2 active:border-blue-300">Home</li>
           <li className="mx-4 cursor-pointer hover:border-b-2 border-blue-400 active:border-b-2 active:border-blue-300">Course</li>
           <li className="mx-4 cursor-pointer hover:border-b-2 border-blue-400 active:border-b-2 active:border-blue-300">Blogs</li>
