@@ -2,6 +2,7 @@ import React from 'react'
 import LandingBanner from './LandingBanner'
 import Courses from './Courses'
 import Testimonial from './Testimonial'
+import Footer from './Footer'
 
 const Home = () => {
   return (
@@ -14,6 +15,9 @@ const Home = () => {
         </div>
         <div>
           <Testimonial />
+        </div>
+        <div>
+          <Footer />
         </div>
     </div>
   )
