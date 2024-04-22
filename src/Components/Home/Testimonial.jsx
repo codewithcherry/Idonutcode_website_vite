@@ -39,7 +39,7 @@ const Testimonial = () => {
                             </span>
                                 <h2 className='text-center text-lg text-slate-600'>"{item.title}"</h2>
                                 <p className='text-md text-slate-400'>{item.desscription}</p>
-                                <span className='text-right'>-</span>
+                                
                                 <p className='text-right text-lg text-slate-600 font-semibold'>{item.userName}</p>
                                 <p className='text-right text-sm text-slate-500'>{item.position}</p>
                             </div>
