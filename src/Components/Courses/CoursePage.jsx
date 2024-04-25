@@ -21,6 +21,12 @@ const CoursePage = () => {
             description:"Python master course is one on one course with complete beginner to pro level concepts including datastructures and algorithm using python. Master class includes more than 100+ videos covering all the concepts",
             coverUrl:"https://kitflix.com/wp-content/uploads/2023/08/C-Programming.png"
         },
+        {
+            Title:"Web-Devlopment ",
+            courseType:"free",
+            description:"Python master course is one on one course with complete beginner to pro level concepts including datastructures and algorithm using python. Master class includes more than 100+ videos covering all the concepts",
+            coverUrl:"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200214165928/Web-Development-Course-Thumbnail.jpg"
+        },
 
     ]
 
