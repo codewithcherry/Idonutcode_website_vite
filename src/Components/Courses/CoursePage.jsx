@@ -31,7 +31,7 @@ const CoursePage = () => {
             <h1 className='text-3xl text-center m-2 p-2 font-semibold text-slate-600'>All Courses</h1>
         </div>
         <div className='flex justify-center'>
-        <div className='grid grid-cols-4 place-content-center m-2 w-[70%] '>
+        <div className='grid grid-cols-4 place-content-center m-2 p-4 w-[70%] '>
             {courses.map((item,index)=>{
                 return (
                     <div key={index} className='mx-4 shadow-2xl  bg-white rounded-md '>
