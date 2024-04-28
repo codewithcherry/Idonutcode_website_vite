@@ -37,15 +37,18 @@ const CoursePage = () => {
             <h1 className='text-3xl text-center m-2 p-2 font-semibold text-slate-600'>All Courses</h1>
         </div>
         <div className='flex justify-center'>
-        <div className='grid grid-cols-4 place-content-center m-2 p-4 w-[70%] '>
+        <div className='grid grid-cols-3 place-content-center m-2 p-4 w-[70%] '>
             {courses.map((item,index)=>{
                 return (
-                    <div key={index} className='mx-4 shadow-2xl  bg-white rounded-md '>
+                    <div key={index} className='m-4 shadow-2xl  bg-white rounded-md '>
                     <img src={item.coverUrl} alt=""  className='rounded-md'/>
                     <div className='m-2 p-2'>
                         <span className='font-semibold text-Fuchsia-500 bg-blue-200 m-2 p-1 rounded-xl'>{item.courseType}</span>
                         <h1 className='font-semibold text-slate-600 text-xl m-2 p-1'>{item.Title}</h1>
-                        <p className='text-md text-slate-400 m-2 p-1'>{item.description}</p>
+                        <div className='flex items-end'>
+                        <p className='text-md text-slate-400 m-2 p-1 h-24 overflow-hidden'>{item.description}</p>   
+                        <span className='text-md text-slate-400 m-2 p-1'>...</span>
+                        </div>
                         <button className='font-semibold text-white bg-pink-400 m-2 p-2 rounded-xl shadow-md hover:bg-pink-500'>Start Watching</button>
                     </div>
                     </div>
