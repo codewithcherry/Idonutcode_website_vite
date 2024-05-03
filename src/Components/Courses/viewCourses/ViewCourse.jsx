@@ -1,4 +1,5 @@
 import React from 'react'
+import ViewCourseDetails from './ViewCourseDetails'
 
 const ViewCourse = () => {
 
@@ -39,6 +40,9 @@ const ViewCourse = () => {
             </div>
             <div>
                 <iframe width="1180" height="520" src="https://www.youtube-nocookie.com/embed/yUL0lND-ii0?si=i82JKIU6rkjzF91n" className='' title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div className='w-full bg-pink-300 '>
+                <ViewCourseDetails />
             </div>
         </div>
         <div className='bg-slate-200 w-full h-screen border border-slate-600'>
