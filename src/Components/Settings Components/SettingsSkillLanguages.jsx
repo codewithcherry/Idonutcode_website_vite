@@ -68,13 +68,15 @@ const SettingsSkillLanguages = () => {
 )}  
       </div>
      </div>
-     <div className='m-4 p-2'>
+     <div className='m-4 p-2 mt-6'>
       <div >
         <form onSubmit={handleAddLanguage}>
             <div>
                 <h1 className='text-lg text-slate-600 font-semibold'>Languages</h1>
+                <div className='p-2 border-2 rounded-md'>
                 <input className='p-2 m-2 border rounded focus:outline-none focus:ring-blue-300 focus:ring-2 focus:rounded-md ring-2 ring-slate-300 placeholder:lg' placeholder='enter language' type="text" onChange={handleLanguageInput} value={languageInput}  disabled={edit}/>
-                <button className='p-2 m-2 bg-pink-300 rounded-md text-white font-semibold' disabled={edit} >add Language</button>
+                <button className='p-2 m-2 bg-pink-300 rounded-md text-white font-semibold hover:bg-pink-500' disabled={edit} >add Language</button>
+                </div>
             </div>   
         </form>
       </div>
