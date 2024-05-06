@@ -51,7 +51,7 @@ const SettingsSkillLanguages = () => {
                 <h1 className='text-lg text-slate-600 font-semibold'>Skills</h1>
                 <div className='border-2 rounded-md p-2  '>
                 <input className='p-2 m-2 border rounded focus:outline-none focus:ring-blue-300 focus:ring-2 focus:rounded-md ring-2 ring-slate-300 placeholder:lg' placeholder='enter skill' type="text" onChange={handleSkills} value={skillsInput}  disabled={edit}/>
-                <button className='p-2 m-2 bg-pink-300 rounded-md text-white font-semibold' disabled={edit} >add skill</button>
+                <button className='p-2 m-2 bg-pink-300 rounded-md text-white font-semibold hover:bg-pink-500' disabled={edit} >add skill</button>
                 </div>
             </div>   
         </form>
