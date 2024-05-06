@@ -33,7 +33,7 @@ const SettingsSkillLanguages = () => {
   return (
     <div>
       <div>
-        <h1 className='text-center text-xl font-semibold text-slate-600 border-b-2 border-pink-200 shadow-md p-2'>Skills and Languages</h1>
+        <h1 className='text-center text-xl font-semibold text-slate-600 my-2'>Skills and Languages</h1>
       </div>
       <div className='relative'>
       {edit &&  <button className='flex p-2 m-2 absolute top-4 right-4 bg-slate-300 rounded-2xl' 
@@ -45,7 +45,7 @@ const SettingsSkillLanguages = () => {
             </button>}
       </div>
      <div className='m-4 p-2'>
-     <div className='mt-6'>
+     <div className='mt-4'>
         <form onSubmit={handleAddSkill}>
             <div>
                 <h1 className='text-lg text-slate-600 font-semibold'>Skills</h1>
