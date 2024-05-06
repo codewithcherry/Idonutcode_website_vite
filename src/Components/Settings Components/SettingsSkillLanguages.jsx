@@ -45,20 +45,22 @@ const SettingsSkillLanguages = () => {
             </button>}
       </div>
      <div className='m-4 p-2'>
-     <div >
+     <div className='mt-6'>
         <form onSubmit={handleAddSkill}>
             <div>
                 <h1 className='text-lg text-slate-600 font-semibold'>Skills</h1>
+                <div className='border-2 rounded-md p-2  '>
                 <input className='p-2 m-2 border rounded focus:outline-none focus:ring-blue-300 focus:ring-2 focus:rounded-md ring-2 ring-slate-300 placeholder:lg' placeholder='enter skill' type="text" onChange={handleSkills} value={skillsInput}  disabled={edit}/>
                 <button className='p-2 m-2 bg-pink-300 rounded-md text-white font-semibold' disabled={edit} >add skill</button>
+                </div>
             </div>   
         </form>
       </div>
       <div className='my-5 p-4'>
       {(skills.length === 0) ? (
-    <p className='flex justify-center rounded-lg shadow-lg bg-slate-300 w-1/2 p-4'> No skills added</p>
+    <p className='flex flex-wrap justify-center rounded-lg shadow-lg bg-slate-300 w-1/2 p-4'> No skills added</p>
 ) : (
-    <ul className='flex justify-center rounded-lg shadow-lg bg-slate-300 w-1/2 p-4'>
+    <ul className='flex flex-wrap justify-center rounded-lg shadow-lg bg-slate-300 w-1/2 p-4'>
         {skills.map((item, index) => (
             <li className='p-2 m-2 bg-pink-300 rounded-2xl' key={index}>{item}</li>
         ))}
