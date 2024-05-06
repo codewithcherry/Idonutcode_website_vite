@@ -34,6 +34,7 @@ const SettingsSkillLanguages = () => {
     <div>
       <div>
         <h1 className='text-center text-xl font-semibold text-slate-600 my-2'>Skills and Languages</h1>
+        <p className='text-sm text-red-500 text-center p-2 '>You can add and edit the skills and languages by clicking edit</p>
       </div>
       <div className='relative'>
       {edit &&  <button className='flex p-2 m-2 absolute top-2 right-4 z-[5] bg-slate-300 rounded-2xl font-medium' 
