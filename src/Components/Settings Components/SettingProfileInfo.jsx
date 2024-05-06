@@ -26,7 +26,7 @@ const SettingProfileInfo = () => {
         <input className='p-2 m-2  placeholder:text-md rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-2 ring-gray-500'  type="text" value={"john Doe"} disabled={edit} />
       </div>
       <div className='relative '>
-        <label htmlFor="" className='absolute top-4 left-3 px-1  bg-white text-lg text-slate-600 '>Email</label> <br />
+        <label htmlFor="" className='absolute top-4 left-3 px-1  bg-white text-md text-slate-600 '>Email</label> <br />
         <input type="email" className='p-2 m-2  placeholder:text-md rounded border focus:outline-none focus:ring-2 focus:ring-pink-300 ring-2 ring-gray-500' disabled={edit} value={"example@gmail.com"}/>
       </div>
       <div className='my-4 m-2'>
