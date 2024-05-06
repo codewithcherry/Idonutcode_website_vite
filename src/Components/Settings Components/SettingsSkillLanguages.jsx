@@ -82,9 +82,9 @@ const SettingsSkillLanguages = () => {
       </div>
       <div className='my-5 p-4'>
       {(languages.length === 0) ? (
-    <p className='flex justify-center rounded-lg shadow-lg bg-slate-300 w-1/2 p-4'> No Languages added</p>
+    <p className='flex  flex-wrap justify-center rounded-lg shadow-lg bg-slate-300 w-1/2 p-4'> No Languages added</p>
 ) : (
-    <ul className='flex justify-center rounded-lg shadow-lg bg-slate-300 w-1/2 p-4'>
+    <ul className='flex flex-wrap justify-center rounded-lg shadow-lg bg-slate-300 w-1/2 p-4'>
         {languages.map((item, index) => (
             <li className='p-2 m-2 bg-pink-300 rounded-2xl' key={index}>{item}</li>
         ))}
