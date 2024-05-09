@@ -1,5 +1,6 @@
 import React from 'react'
 import banner from "./banner.png"
+import { Link } from 'react-router-dom'
 
 const LandingBanner = () => {
   return (
@@ -11,7 +12,8 @@ const LandingBanner = () => {
           <p className='m-2 text-lg text-slate-500'>Struggling to believe you can learn to code? Idonutcode is here to empower everyone, regardless of background, to embark on their coding journey. Our platform breaks down complex coding concepts into manageable steps,  making them accessible and engaging. </p>
           <div>
             <button className='bg-pink-300 hover:bg-pink-500 m-2 p-2 rounded-lg text-white font-bold shadow-md'>Explore Page</button>
-            <button className='bg-white  border-slate-400 border-2 m-2 p-2 rounded-lg text-slate-500 shadow-lg  font-bold hover:text-white hover:bg-slate-500 '>Courses</button>
+            <Link to="/courses" className='bg-white  border-slate-400 border-2 m-2 p-2 rounded-lg text-slate-500 shadow-lg  font-bold hover:text-white hover:bg-slate-500 '>
+              Courses</Link>
           </div>
         </div>
         <div>
