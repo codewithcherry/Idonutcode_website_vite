@@ -51,7 +51,7 @@ const CoursePage = () => {
                         <span className='text-md text-slate-400 m-2 p-1'>...</span>
                         </div>
                         <button className='font-semibold text-white bg-pink-400 m-2 p-2 rounded-xl shadow-md hover:bg-pink-500'>
-                           <Link to="view_course"> Start Watching   </Link> 
+                           <Link to="/viewcourse"> Start Watching   </Link> 
                         </button>
                     </div>
                     </div>

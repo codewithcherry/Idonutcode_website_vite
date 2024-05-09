@@ -7,6 +7,7 @@ import Navbar from './Components/Navbar'
 import Settings from './Components/Settings Components/Settings'
 
 import { Routes,Route, Outlet } from 'react-router-dom'
+import CoursePage from './Components/Courses/CoursePage'
 
 
 
@@ -21,8 +22,9 @@ function App() {
       <Routes>
         <Route path='/' element={ <Home /> } />
         <Route path='/home' element={ <Home />} />
-        <Route path='/courses' element={<Courses />} >
-           {/* <Route path='/view_course' element={ <ViewCourse />} /> */}
+        <Route path='/' element={<Courses />} >
+           <Route path='courses' element={<CoursePage />} />
+           <Route path='viewcourse' element={<ViewCourse />} />
         </Route>
         <Route path='/profile' element={ <Profile />} />
         <Route path='/settings' element={ <Settings />} />
