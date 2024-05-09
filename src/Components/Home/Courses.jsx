@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Courses = () => {
 
@@ -25,7 +26,7 @@ const Courses = () => {
     ]
 
   return (
-    <div className=' '>
+    <div className=' ' id='recommended-courses'>
        <div>
         <div>
             <h1 className='text-3xl text-center m-2 p-2 font-semibold text-slate-600'>Recommended Courses</h1>
@@ -40,7 +41,11 @@ const Courses = () => {
                         <span className='font-semibold text-Fuchsia-500 bg-blue-200 m-2 p-1 rounded-xl'>{item.courseType}</span>
                         <h1 className='font-semibold text-slate-600 text-xl m-2 p-1'>{item.Title}</h1>
                         <p className='text-md text-slate-400 m-2 p-1'>{item.description}</p>
-                        <button className='font-semibold text-white bg-pink-400 m-2 p-2 rounded-xl shadow-md hover:bg-pink-500'>Start Watching</button>
+                        <button className='font-semibold text-white bg-pink-400 m-2 p-2 rounded-xl shadow-md hover:bg-pink-500'>
+                        <Link to="/viewcourse">    
+                        Start Watching
+                            </Link>    
+                        </button>
                     </div>
                     </div>
                 )
