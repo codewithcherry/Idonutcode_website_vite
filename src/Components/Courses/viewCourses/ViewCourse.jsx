@@ -32,11 +32,11 @@ const ViewCourse = () => {
     ]
 
   return (
-    <div className='h-full'>
+    <div className='h-full bg-slate-50'>
       <div className='flex border-collapse'>
         <div className=''>
-            <div className='bg-slate-200 border border-slate-600'>
-                <h1 className='text-xl text-slate-600 font-semibold p-2'>Introduction to linked List in Python</h1>
+            <div className='bg-slate-50 border border-slate-600'>
+                <h1 className='text-xl text-slate-600 font-semibold p-2'>Lesson:01 (Introduction to linked List in Python) </h1>
             </div>
             <div>
                 <iframe width="1180" height="520" src="https://www.youtube-nocookie.com/embed/yUL0lND-ii0?si=i82JKIU6rkjzF91n" className='' title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -45,7 +45,7 @@ const ViewCourse = () => {
                 <ViewCourseDetails />
             </div>
         </div>
-        <div className='bg-slate-200 w-full h-screen border border-slate-600'>
+        <div className='bg-slate-50 w-full h-screen border border-slate-600'>
             <div className='text-center '>
                 <h1 className='text-xl font-medium text-slate-600 p-2 border-b border-slate-500'>Course Content</h1>
             </div>
