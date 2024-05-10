@@ -8,6 +8,7 @@ import Settings from './Components/Settings Components/Settings'
 
 import { Routes,Route, Outlet } from 'react-router-dom'
 import CoursePage from './Components/Courses/CoursePage'
+import Blogs from './Components/Blogs/Blogs'
 
 
 
@@ -26,6 +27,7 @@ function App() {
            <Route path='courses' element={<CoursePage />} />
            <Route path='viewcourse' element={<ViewCourse />} />
         </Route>
+        <Route path='/blogs' element={<Blogs />} />
         <Route path='/profile' element={ <Profile />} />
         <Route path='/settings' element={ <Settings />} />
       </Routes>
