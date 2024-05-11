@@ -2,8 +2,10 @@ import React from 'react'
 
 const Blogs = () => {
   return (
-    <div  className='container'>
-      This is the page for currating all the blogs of idonutcode for coding related topics
+    <div  className='h-screen'>
+      <div>
+        <div className='text-2xl text-slate-600 text-center font-medium'>Blogs</div>
+      </div>
     </div>
   )
 }
