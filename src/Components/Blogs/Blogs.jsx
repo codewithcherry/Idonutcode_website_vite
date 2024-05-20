@@ -42,14 +42,14 @@ const Blogs = () => {
     },
   ]
   return (
-    <div  className='h-screen'>
-      <div className='text-2xl text-left font-medium'>
-        <h1 className='m-4 text-black'>
-          Blogs on Coding
+    <div  className=''>
+      <div className='text-3xl text-left '>
+        <h1 className='m-4 mx-5 text-black text-left'>
+          Articles on Coding
         </h1>
       </div>
-      <div>
-        <div>
+      <div className=''>
+        <div className=''>
           {blogs && 
                   blogs.map((item,index)=>{
                     return (<Blog blogdata={item} key={index}/>)
