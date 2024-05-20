@@ -4,7 +4,7 @@ const Blog = ({blogdata}) => {
   return (
     <div className='m-4 p-2 bg-white w-2/3 border-2 shadow-md rounded-md'>
       <div>
-        <h1 className='text-3xl text-left font-medium text-slate-600 m-2'>{blogdata.title}</h1>
+        <h1 className='text-3xl text-left font-medium text-black m-2'>{blogdata.title}</h1>
         <p className='text-lg m-2 text-slate-400'>{blogdata.description}</p>
       </div>
       <div className='flex items-center m-2'>
