@@ -1,4 +1,5 @@
 import React from 'react'
+import Blog from './Blog'
 
 const Blogs = () => {
 
@@ -49,8 +50,10 @@ const Blogs = () => {
       </div>
       <div>
         <div>
-          {
-            blogs? <p className='text-xl text-center font-medium text-slate-600 bg-white p-2 m-2 rounded-md shadow-sm'>No blogs to show</p>:"blogs will be shown here"
+          {blogs && 
+                  blogs.map((item,index)=>{
+                    return (<Blog blogdata={item} key={index}/>)
+                  })          
           }
         </div>
       </div>
