@@ -45,21 +45,21 @@ const Blogs = () => {
   return (
     <div  className=''>
       <div className='text-3xl text-left '>
-        <h1 className='m-4 mx-5 text-black text-left border-b-2 p-2 border-pink-200'>
+        <h1 className='m-4 mx-5 text-slate-600 text-left border-b-2 p-2 border-pink-200 font-medium'>
           Articles on Coding
         </h1>
       </div>
       <div className='flex justify-center'>
-        <div className='w-2/3'>
+        <div className='w-2/3 h-screen overflow-auto'>
           {blogs && 
                   blogs.map((item,index)=>{
                     return (<Blog blogdata={item} key={index}/>)
                   })          
           }
         </div>
-        <div className='bg-white w-1/3 border-2 my-4 rounded-md'>
+        <div className='bg-white w-1/3 border-2 my-4 rounded-md h-screen overflow-y-auto'>
           <h1 className='text-center text-2xl m-2 p-2 font-medium '>Trending Articles</h1>
-          <div>
+          <div className=''>
              <TrendingArticles />
           </div>
         </div>
