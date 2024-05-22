@@ -2,7 +2,7 @@ import React from 'react'
 
 const Blog = ({blogdata}) => {
   return (
-    <div className='m-4 p-2 bg-white  border-2 shadow-md rounded-md'>
+    <div className='mb-4 ml-4 p-2 bg-white  border-2 shadow-md rounded-md'>
       <div>
         <h1 className='text-3xl text-left font-medium text-black m-2'>{blogdata.title}</h1>
         <p className='text-lg m-2 text-slate-400'>{blogdata.description}</p>
