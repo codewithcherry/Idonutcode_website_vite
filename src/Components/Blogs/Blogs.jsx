@@ -1,5 +1,6 @@
 import React from 'react'
 import Blog from './Blog'
+import TrendingArticles from './TrendingArticles'
 
 const Blogs = () => {
 
@@ -59,7 +60,7 @@ const Blogs = () => {
         <div className='bg-white w-1/3 border-2 my-4 rounded-md'>
           <h1 className='text-center text-2xl m-2 p-2 font-medium '>Trending Articles</h1>
           <div>
-            
+             <TrendingArticles />
           </div>
         </div>
       </div>
