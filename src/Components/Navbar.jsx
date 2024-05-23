@@ -42,7 +42,11 @@ const Navbar = () => {
             Blogs
             </Link>
             </li>
-          <li className="mx-4 cursor-pointer hover:border-b-2 border-blue-400 active:border-b-2 active:border-blue-300">About</li>
+          <li className="mx-4 cursor-pointer hover:border-b-2 border-blue-400 active:border-b-2 active:border-blue-300">
+            <Link to={"/about"}>
+            About
+            </Link>
+            </li>
         </ul>
       </div>
       <div className="mx-4 relative">
