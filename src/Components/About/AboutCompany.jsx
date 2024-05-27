@@ -13,7 +13,7 @@ const AboutCompany = () => {
         <div className='flex justify-center items-center m-2 p-2 my-6'>
             <div className='w-2/5'>
                 <h1 className='text-2xl font-medium text-center m-2 p-2 underline underline-offset-8 '>Our Company</h1>
-                <p className='text-md text-slate-600 m-2 p-2 '>THis is the paragraph were will be talking about the idonutcode website to make the design look more apppealing to the users and make sense while designing and coding the project</p>
+                <p className='text-md text-slate-600 m-2 p-2 '>This is the paragraph were will be talking about the idonutcode website to make the design look more apppealing to the users and make sense while designing and coding the project</p>
             </div>
             <div className='w-2/5'>
                 <img className='h-80  rounded-md ' src="https://resources.owllabs.com/hubfs/Blog%20Images/Stock/Office/Office-3343205_1152px.jpg" alt="" />
@@ -26,7 +26,7 @@ const AboutCompany = () => {
             </div>
             <div className='w-2/5'>
                 <h1 className='text-2xl font-medium text-center m-2 p-2 underline underline-offset-8'>Our mission</h1>
-                <p className='text-md text-slate-600 m-2 p-2 '>THis is the paragraph were will be talking about the idonutcode website to make the design look more apppealing to the users and make sense while designing and coding the project</p>
+                <p className='text-md text-slate-600 m-2 p-2 '>This is the paragraph were will be talking about the idonutcode website to make the design look more apppealing to the users and make sense while designing and coding the project</p>
             </div>   
         </div>
       
