@@ -7,8 +7,8 @@ const AboutCommunity = () => {
         <div className='m-2 p-3'>
             <h1 className='text-center text-2xl font-medium underline underline-offset-8'>Our Community</h1>
         </div>
-        <div className='flex justify-center w-full my-6'>
-            <div className='grid grid-cols-3 place-items-center gap-4 w-full'>
+        <div className='flex justify-center w-full my-6 '>
+            <div className='grid grid-cols-3 place-items-center gap-4 w-[80%] border-2 rounded-md py-4 shadow-sm '>
                 <div className=' text-center m-2 p-2 bg-white shadow-md rounded-md w-2/3'>
                     <div className='flex justify-center'>
                         <img className='h-32 w-32' src="https://static.vecteezy.com/system/resources/previews/018/930/413/non_2x/instagram-logo-instagram-icon-transparent-free-png.png" alt="" />
