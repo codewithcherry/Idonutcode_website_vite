@@ -7,8 +7,8 @@ const AboutUs = () => {
   return (
     <div>
       <AboutCompany />
-      <AboutCommunity />
       <AboutTeam />
+      <AboutCommunity />
     </div>
   )
 }
