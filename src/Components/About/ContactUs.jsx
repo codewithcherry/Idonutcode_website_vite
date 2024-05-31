@@ -26,13 +26,15 @@ const ContactUs = () => {
                                         <input type="text" placeholder='Last Name' className='m-2 p-2 rounded-md shadow-md outline outline-2 outline-blue-400 focus:outline-green-400' />
                                 </div>
                            </div>
-                           <div>
-                                
-                                <input type="email" placeholder='enter your email id'  className='m-2 p-2 rounded-md shadow-md outline outline-2 outline-blue-400 focus:outline-green-400'/>
-                           </div>
-                           <div>
-                                
-                                <input type="phone" placeholder='+XX XXX-XXX-0000' className='m-2 p-2 rounded-md shadow-md outline outline-2 outline-blue-400 focus:outline-green-400'/>
+                           <div className='flex '>
+                            <div>
+                                    
+                                    <input type="email" placeholder='enter your email id'  className='m-2 p-2 rounded-md shadow-md outline outline-2 outline-blue-400 focus:outline-green-400'/>
+                            </div>
+                            <div>
+                                    
+                                    <input type="phone" placeholder='+XX XXX-XXX-0000' className='m-2 p-2 rounded-md shadow-md outline outline-2 outline-blue-400 focus:outline-green-400'/>
+                            </div>
                            </div>
                            <div>
                                 <label htmlFor="inquiry" className='m-2 text-sm text-slate-600'>
