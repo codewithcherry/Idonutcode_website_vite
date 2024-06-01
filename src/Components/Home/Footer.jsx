@@ -3,7 +3,7 @@ import BrandLogo  from './BrandLogo.png'
 
 const Footer = () => {
   return (
-    <div className='bg-pink-200 p-4 text-slate-600'>
+    <div className='bg-pink-200 p-4 text-slate-600 mt-10'>
       <div className='flex justify-evenly items-top'>
         <div className='w-1/5'>
             <div className='grid grid-cols-1  m-2 p-2 '>
