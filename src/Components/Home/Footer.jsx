@@ -1,12 +1,13 @@
 import React from 'react'
 import BrandLogo  from './BrandLogo.png'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
     <div className='bg-pink-200 p-4 text-slate-600 mt-10'>
       <div className='flex justify-evenly items-top'>
-        <div className='w-1/5'>
-            <div className='grid grid-cols-1  m-2 p-2 '>
+        <div className='flex justify-center w-1/5'>
+            <div className=' m-2 p-2 '>
                 <img src={BrandLogo} alt=""  className='h-40 w-40' />
                 <p>Idonutcode is one of the great coding communities of India, for learning coding.</p>
             </div>
@@ -16,9 +17,13 @@ const Footer = () => {
             <ul className='text-left text-md font-medium m-2'>
                 <li className='flex items-center hover:text-black hover:cursor-pointer'>
                     <span>
-                    <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M10 7L15 12L10 17" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M10 7L15 12L10 17" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                     </span>
-                    Blogs</li>
+                    <Link to="/blogs">
+                        Blogs
+                    </Link>
+                   
+                </li>
                 <li className='flex items-center hover:text-black hover:cursor-pointer'>
                 <span>
                     <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M10 7L15 12L10 17" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
@@ -117,7 +122,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='border-t-2 border-pink-500 text-center mt-2 p-1'>
-        <p >©2024 Copyrighted content by Idonutcode </p>
+        <p >2024 © Copyrighted by Idonutcode </p>
       </div>
     </div>
   )
