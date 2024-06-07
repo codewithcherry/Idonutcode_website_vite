@@ -27,7 +27,7 @@ const Testimonial = () => {
     <div>
       <div>
         <div className='text-center m-2 p-2'>
-            <h1 className='text-2xl text-slate-600 font-semibold'>Testimonials</h1>
+            <h1 className='text-2xl text-black font-semibold'>Testimonials</h1>
         </div>
         <div className='flex justify-center  m-4 p-2 s rounded-md'>
             {
