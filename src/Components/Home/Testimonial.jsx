@@ -39,12 +39,12 @@ const Testimonial = () => {
                             </span>
                                 <h2 className='text-center text-lg text-slate-600'>"{item.title}"</h2>
                                 <p className='text-md text-slate-400'>{item.desscription}</p>
-                                <div >
-                                    <div>
+                                <div className='flex justify-end'>
+                                    <div className='m-1 my-2'>
                                         <p className='text-right text-lg text-slate-600 font-semibold'>{item.userName}</p>
                                         <p className='text-right text-sm text-slate-500'>{item.position}</p>
                                     </div>
-                                    <div>
+                                    <div className='m-1'>
                                         <img className='h-12 w-12 rounded-full shadow-md' src="https://www.befunky.com/images/wp/wp-2021-01-linkedin-profile-picture-after.jpg?auto=avif,webp&format=jpg&width=944" alt="" />
                                     </div>
                                 </div>
