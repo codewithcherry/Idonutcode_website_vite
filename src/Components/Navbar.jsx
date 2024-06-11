@@ -50,7 +50,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="mx-4 relative">
-        <input className="block w-full rounded-md  py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-inset focus:outline-none focus:ring-2  focus:ring-pink-300 sm:text-sm sm:leading-6" type="text" placeholder="search"/>
+        <input className="block w-full rounded-md  py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 hover:ring-blue-300 hover:ring-2 hover:ring-offset placeholder:text-gray-400 focus:ring-inset focus:outline-none focus:ring-2  focus:ring-pink-300 sm:text-sm sm:leading-6" type="text" placeholder="search"/>
         <svg className="absolute left-1 top-2 " width="24px" height="24px" viewBox="-4.56 -4.56 33.12 33.12" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>
       </div>
       <div className="flex items-center">
