@@ -19,30 +19,30 @@ const Navbar = () => {
 
   return (
     <>
-    <div className="flex  items-center bg-white shadow-lg z-10 ">
+    <div className="flex items-center bg-white shadow-lg z-10 ">
       <div>
         <Link to="/">
           <img src={Logo} alt=""  className=" mx-2 h-10 w-12 rotate-[35deg] "/>
         </Link>
       </div>
-      <div className="w-full mx-2">
-        <ul className="flex box-border font-medium text-slate-600">
-          <li className="mx-4 cursor-pointer  hover:border-b-2 border-pink-400 active:border-b-2">
+      <div className="w-full h-full mx-2">
+        <ul className="flex box-border h-full font-medium text-slate-600">
+          <li className="mx-4 cursor-pointer hover:border-b-2 border-pink-400 active:border-b-2  hover:text-black transition delay-0 ease-in hover:-translate-y-1">
             <Link to="/home">
             Home
             </Link>
             </li>
-          <li className="mx-4 cursor-pointer hover:border-b-2 border-pink-400 active:border-b-2 ">
+          <li className="mx-4 cursor-pointer hover:border-b-2 border-pink-400 active:border-b-2  hover:text-black transition delay-0 ease-in hover:-translate-y-1">
             <Link to="/courses">
             Courses
             </Link>
             </li>
-          <li className="mx-4 cursor-pointer hover:border-b-2 border-pink-400 active:border-b-2 ">
+          <li className="mx-4 cursor-pointer hover:border-b-2 border-pink-400 active:border-b-2  hover:text-black transition delay-0 ease-in hover:-translate-y-1">
             <Link to={"/blogs"}>
             Blogs
             </Link>
             </li>
-          <li className="mx-4 cursor-pointer hover:border-b-2 border-pink-400 active:border-b-2 ">
+          <li className="mx-4 cursor-pointer hover:border-b-2 border-pink-400 active:border-b-2  hover:text-black transition delay-0 ease-in hover:-translate-y-1">
             <Link to={"/about"}>
             About
             </Link>
