@@ -27,22 +27,22 @@ const Navbar = () => {
       </div>
       <div className="w-full h-full mx-2">
         <ul className="flex box-border h-full font-medium text-slate-600">
-          <li className="mx-4 cursor-pointer hover:border-b-2 border-pink-400 active:border-b-2  hover:text-black transition delay-0 ease-in hover:-translate-y-1">
+          <li className="mx-4 cursor-pointer hover:border-b-2 border-pink-400 active:border-b-2  hover:text-black transition delay-0 ease-in-out hover:-translate-y-1">
             <Link to="/home">
             Home
             </Link>
             </li>
-          <li className="mx-4 cursor-pointer hover:border-b-2 border-pink-400 active:border-b-2  hover:text-black transition delay-0 ease-in hover:-translate-y-1">
+          <li className="mx-4 cursor-pointer hover:border-b-2 border-pink-400 active:border-b-2  hover:text-black transition delay-0 ease-in-out hover:-translate-y-1">
             <Link to="/courses">
             Courses
             </Link>
             </li>
-          <li className="mx-4 cursor-pointer hover:border-b-2 border-pink-400 active:border-b-2  hover:text-black transition delay-0 ease-in hover:-translate-y-1">
+          <li className="mx-4 cursor-pointer hover:border-b-2 border-pink-400 active:border-b-2  hover:text-black transition delay-0 ease-in-out hover:-translate-y-1">
             <Link to={"/blogs"}>
             Blogs
             </Link>
             </li>
-          <li className="mx-4 cursor-pointer hover:border-b-2 border-pink-400 active:border-b-2  hover:text-black transition delay-0 ease-in hover:-translate-y-1">
+          <li className="mx-4 cursor-pointer hover:border-b-2 border-pink-400 active:border-b-2  hover:text-black transition delay-0 ease-in-out hover:-translate-y-1">
             <Link to={"/about"}>
             About
             </Link>
