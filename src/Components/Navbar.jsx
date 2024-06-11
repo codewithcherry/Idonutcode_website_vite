@@ -27,22 +27,22 @@ const Navbar = () => {
       </div>
       <div className="w-full mx-2">
         <ul className="flex box-border font-medium text-slate-600">
-          <li className="mx-4 cursor-pointer  hover:border-b-2 border-blue-400 active:border-b-2 active:border-blue-300">
+          <li className="mx-4 cursor-pointer  hover:border-b-2 border-pink-400 active:border-b-2">
             <Link to="/home">
             Home
             </Link>
             </li>
-          <li className="mx-4 cursor-pointer hover:border-b-2 border-blue-400 active:border-b-2 active:border-blue-300">
+          <li className="mx-4 cursor-pointer hover:border-b-2 border-pink-400 active:border-b-2 ">
             <Link to="/courses">
             Courses
             </Link>
             </li>
-          <li className="mx-4 cursor-pointer hover:border-b-2 border-blue-400 active:border-b-2 active:border-blue-300">
+          <li className="mx-4 cursor-pointer hover:border-b-2 border-pink-400 active:border-b-2 ">
             <Link to={"/blogs"}>
             Blogs
             </Link>
             </li>
-          <li className="mx-4 cursor-pointer hover:border-b-2 border-blue-400 active:border-b-2 active:border-blue-300">
+          <li className="mx-4 cursor-pointer hover:border-b-2 border-pink-400 active:border-b-2 ">
             <Link to={"/about"}>
             About
             </Link>
