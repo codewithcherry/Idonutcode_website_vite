@@ -21,7 +21,7 @@ const ContactUs = () => {
                       Email: 
                       </span>
                       <p className='text-sm text-blue-500 hover:cursor-pointer mx-2'>
-                        care@idonutcode@gmail.com
+                        care@idonutcode.com
                       </p>
                     </div>
                     <div className='flex items-center my-2'>
